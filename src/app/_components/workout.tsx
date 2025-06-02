@@ -64,7 +64,7 @@ export function WorkoutForm() {
           value={exercise}
           onChange={(e) => setExercise(e.target.value)}
           placeholder="e.g., Bench Press"
-          className="w-full rounded-md border border-gray-300 p-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+          className="w-full rounded-md border border-gray-300 p-2 text-gray-900 shadow-sm placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500"
           disabled={createWorkout.isPending}
         />
       </div>
@@ -79,7 +79,7 @@ export function WorkoutForm() {
             value={sets}
             onChange={(e) => setSets(e.target.value)}
             placeholder="3"
-            className="w-full rounded-md border border-gray-300 p-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 shadow-sm placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500"
             disabled={createWorkout.isPending}
           />
         </div>
@@ -93,7 +93,7 @@ export function WorkoutForm() {
             value={reps}
             onChange={(e) => setReps(e.target.value)}
             placeholder="10"
-            className="w-full rounded-md border border-gray-300 p-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 shadow-sm placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500"
             disabled={createWorkout.isPending}
           />
         </div>
@@ -107,7 +107,7 @@ export function WorkoutForm() {
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
             placeholder="100"
-            className="w-full rounded-md border border-gray-300 p-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 shadow-sm placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500"
             disabled={createWorkout.isPending}
           />
         </div>
