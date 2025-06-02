@@ -18,3 +18,12 @@ model Post {
 
     @@index([name])
 }
+
+model Workout {
+    id        Int      @id @default(autoincrement())
+    exercise  String
+    sets      Int
+    reps      Int
+    weight    Int
+    createdAt DateTime @default(now())
+}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { LatestPost } from "~/app/_components/post";
+import { WorkoutForm, WorkoutList } from "~/app/_components/workout"; // Import workout components
 import { api, HydrateClient } from "~/trpc/server";
 
 export default async function Home() {
@@ -45,7 +46,17 @@ export default async function Home() {
             </p>
           </div>
 
-          <LatestPost />
+          {/* Workout Section */}
+          <div className="w-full max-w-2xl">
+            <WorkoutForm />
+            <div className="mt-8"> {/* Added margin-top for spacing */}
+              <WorkoutList />
+            </div>
+          </div>
+
+          <div className="mt-8"> {/* Added margin-top for spacing */}
+            <LatestPost />
+          </div>
         </div>
       </main>
     </HydrateClient>
